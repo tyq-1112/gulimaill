@@ -10,5 +10,13 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto
+      # 逻辑删除：在实体类字段加 @TableLogic
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
 server:
   port: 10000
+logging:
+  level:
+    com.tyq.gulimall: debug
+
+# 阿里云OSS存储
